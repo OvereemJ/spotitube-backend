@@ -1,25 +1,25 @@
 package han.nl.dea.spotitubebackend;
 
-public class User {
+public class UserDTO {
 
-    private String username;
+    private String user;
     private String password;
 
-    public User(){
+    public UserDTO(){
 
     }
 
-    public User(String username, String password){
-        this.username = username;
+    public UserDTO(String username, String password){
+        this.user = username;
         this.password = password;
     }
 
     public String getUsername() {
-        return username;
+        return user;
     }
 
     public void setUsername(String username) {
-        this.username = username;
+        this.user = username;
     }
 
     public String getPassword() {
@@ -30,8 +30,4 @@ public class User {
         this.password = password;
     }
 
-    public String generateToken(String username, String password){
-        String token = username+=password;
-        return  token;
-    }
 }
