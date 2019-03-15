@@ -1,4 +1,4 @@
-package han.nl.dea.spotitubebackend;
+package han.nl.dea.spotitubebackend.dto;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,6 +7,7 @@ public class PlaylistDTO {
     private int id;
     private String name;
     private Boolean owner;
+
     private List<TrackDTO> tracks;
 
     public PlaylistDTO() {

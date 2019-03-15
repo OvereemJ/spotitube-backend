@@ -1,4 +1,4 @@
-package han.nl.dea.spotitubebackend;
+package han.nl.dea.spotitubebackend.dto;
 
 public class TokenDTO {
 

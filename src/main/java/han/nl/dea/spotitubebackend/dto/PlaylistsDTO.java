@@ -1,18 +1,20 @@
-package han.nl.dea.spotitubebackend;
+package han.nl.dea.spotitubebackend.dto;
+
+import han.nl.dea.spotitubebackend.dto.PlaylistDTO;
 
 import java.util.List;
 
 public class PlaylistsDTO {
     private List<PlaylistDTO> playlists;
-    private int lengthInSeconds;
+    private long length;
 
     public PlaylistsDTO() {
 
     }
 
-    public PlaylistsDTO(List<PlaylistDTO> playlists, int lengthInSeconds) {
+    public PlaylistsDTO(List<PlaylistDTO> playlists, long length) {
         this.playlists = playlists;
-        this.lengthInSeconds = lengthInSeconds;
+        this.length = length;
     }
 
     public List<PlaylistDTO> getPlaylists() {
@@ -23,11 +25,11 @@ public class PlaylistsDTO {
         this.playlists = playlists;
     }
 
-    public int getLengthInSeconds() {
-        return lengthInSeconds;
+    public long getLengthInSeconds() {
+        return length;
     }
 
     public void setLengthInSeconds(int lengthInSeconds) {
-        this.lengthInSeconds = lengthInSeconds;
+        this.length = lengthInSeconds;
     }
 }
